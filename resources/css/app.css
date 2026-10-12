@@ -1,0 +1,56 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.min.css';
+
+:root {
+    --app-sidebar-bg: #1e293b;
+}
+
+body {
+    background-color: #f4f6f9;
+}
+
+.stat-card {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+a.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08) !important;
+}
+
+.stat-icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.4rem;
+}
+
+.table > :not(caption) > * > * {
+    vertical-align: middle;
+}
+
+.min-w-0 {
+    min-width: 0;
+}
+
+.login-page {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
+.border-dashed {
+    border-style: dashed !important;
+}
+
+.toast-container {
+    z-index: 1090;
+}
+
+.toast-enter-active,
+.toast-leave-active {
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.toast-enter-from,
+.toast-leave-to {
+    opacity: 0;
+    transform: translateX(1.5rem);
+}
